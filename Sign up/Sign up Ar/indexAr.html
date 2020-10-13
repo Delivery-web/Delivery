@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل</title>
+    <link rel="stylesheet" href="styleAr.css">
+</head>
+<body>
+    <!-- nav-bar -->
+    <nav>
+        <a href="#" class="logo"><img class="logo" src="assets/icon-logo/Logo Header.svg"></a>
+            <form class="search-box" action="">
+            <div class="search-box">
+                <input class="search-input" type="search" name="search" placeholder="بحث" maxlength="55"> 
+                <button class="search-button" type="submit">
+                <img class="search-icon" src="assets/icon-logo/MAGNIFYING GLASS.svg" alt="search-logo"></button>
+            </div>         
+            </form>
+            <li ><a class="home" href="#">الرئيسيه</a></li>
+            <li ><a id="unr" class="lang1" href="../Sign up En/index-en.html">EN</a></li>
+            <li ><a id="hl"class="lang2" href="../Sign up Ar/indexAr.html">عربي</a></li>
+            <a href="../../Sgin in/Sign in Ar/indexAr.html" class="sign-in-now" >تسجيل الدخول</a>
+            <a id="lh" class="sign-up-now" >تسجيل</a>
+    </nav>
+    <!-- Main  -->
+    <main>
+        <div class="container">
+            <div class="img">
+                <img src="assets/pexels-pixabay-315755.png" alt="">
+            </div>
+            <div class="content">
+                
+                <form class="sign-up" action="">
+                    <h1>التسجيل</h1>
+                    <p>*اسم المستخدم<input type="text" class="username field" maxlength="24" required></p>
+
+                    <p>*البريد الالكتروني<input type="email" class="email field" required></p>
+
+                    <p>*كلمة السر<input type="password" class="password field" id="password-field" maxlength="24" required></p>
+                    
+                    <div class="toggle-password">
+                        <img class="eye" src="assets/iconmonstr-eye-9.svg" alt="">
+                        <img class="eye-slash" src="assets/iconmonstr-eye-10.svg" alt="">
+                    </div>
+                    <div class="password-policies">
+                        <div class="policy-length">
+                           احرف 8 
+                        </div>
+                        <div class="policy-number">
+                            يحتوي على رقم
+                        </div>
+                    </div>
+
+                    <p>*تأكيد كلمة السر<input type="password" class="confirm-password field" maxlength="24" required></p>
+
+                    <h6 class="terms-text"><input type="checkbox" name="" class="terms" required> أوافق على.<a href="$">شروط الخدمة </a></h6>
+
+                    <h5 class="account">لديك حساب بالفعل؟<a href="../../Sgin in/Sign in Ar/indexAr.html">سجل دخولك الان</a></h5>
+
+                    <button type="submit" class="submit-button">تسجيل</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+        <div class="app-box">
+            <h3 class="app-text">...قريبا على</h3>
+            <a href="#"><img src="assets/icon-logo/Apple_Store.svg"></a>
+            <a href="#"><img src="assets/icon-logo/Google_Play.svg"></a>
+        </div>
+
+        <img class="footer-logo" src="assets/icon-logo/Logo Header copy.svg">
+        <div class="social-box">
+            <h3 class="social-text">صفحات التواصل الاجتماعي</h3>
+            <a class="social-icon" href="#"><img id="insta" src="assets/icon-logo/instagram.svg"></a>
+            <a class="social-icon" href="#"><img src="assets/icon-logo/Facebook.svg"></a>
+            <a class="social-icon" href="#"><img src="assets/icon-logo/twitter.svg"></a>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="jquery-1.12.4.js"></script>
+    <script src="scriptAr.js"></script>
+</body>
+</html>
