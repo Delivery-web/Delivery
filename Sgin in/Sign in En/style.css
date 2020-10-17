@@ -1,0 +1,283 @@
+@font-face{
+    font-family: intro-bold;
+    src: url(assets/fonts/Intro\ Bold\ Regular.otf);
+}
+@font-face{
+    font-family: lalezar;
+    src: url(assets/fonts/Lalezar-Regular.ttf);
+}
+@font-face{
+    font-family: hacen;
+    src: url(assets/fonts/Hacen-Algeria.ttf);
+}
+:focus {
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/*  nav-bar  */
+nav {
+    width: 1166px;
+    height: 76px;
+    margin: auto;
+    display: flex;
+    margin-top:10px ;
+    margin-bottom: 5px;
+    align-items: center;
+    font-size: 18px;
+    font-family: lalezar;
+}
+.logo {
+    height: 31.77px;
+    width: 197.85px;
+    margin-right: 55px;
+    cursor: pointer;
+}
+.search-box {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width: 450px;
+    height: 40px;
+}
+.search-input {
+    margin-left: 16px;
+    width: 90%;
+    background: none;
+    color: #a5a5a5;
+    outline: none;
+    border: none;
+}
+.search-icon {
+    height: 32px;
+    width: 32px;
+}
+.search-button {
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+.home {
+    color: #ff783d;
+    margin-left: 20px;
+    margin-right: 16px;
+    padding: 7px 27.5px;
+    border-radius: 30px;
+}
+.home:hover {
+    transition: 0.4s;
+    background-color: #f3f3f3;
+}
+.lang1 {
+    color: #ff783d;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+.lang2 {
+    color: #ff783d;
+    border-radius: 25px;
+    padding: 6px 8px;
+}
+.sign-in-now {
+    color: #ff783d;
+    margin-left: auto;
+    padding: 7px 20.5px;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+}
+.sign-up-now {
+    color: white;
+    padding: 7px 20.5px;
+    border-radius: 30px;
+    background-color: #ff783d;
+}
+
+
+#hl {
+    background-color: #f3f3f3;
+}
+#unr {
+    font-family: hacen !important;
+    font-size: 18px;
+}
+/*  main   */
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+.container{
+    display: flex;
+    /*background: #a5a5a5;*/
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 655px;
+    height: 475px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+
+}
+.img{
+    position: relative;
+    margin-right: auto;
+    z-index: 0;
+}
+.content{
+    position: absolute;
+    margin-left: 125px;
+    width: 374px;
+    height: 377px;
+    background: white;
+    box-shadow: 4px 7px 13px hsl(0, 0%, 7%,0.15);
+    border-radius: 20px;
+    z-index: 1;
+}
+.sign-up{
+    display: inline;
+    margin-left: 20px;
+    height: 306px;
+    width: 103px;
+}
+.sign-up h1{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #FF783D;
+    font-family: hacen;
+    font-weight: 500;
+    cursor: default;
+}
+.sign-up p{
+    font-size: 14px;
+    margin-left: 15px;
+    color: #FF783D;
+    font-family: lalezar;
+    line-height: 54px;
+    font-weight: 500;
+    cursor: default;
+}
+.sign-up .field{
+    color: #FF783D;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 175px;
+    height: 30px;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+}
+.sign-up input:focus{
+    border: 2px solid #FF783D;
+    border-radius: 10px;
+}
+.sign-up .account{
+    display: inline-block;
+    float: left;
+    color: #a5a5a5;
+    font-family: lalezar;
+    font-weight: 50;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 85px;
+    cursor: default;
+}
+.account a{
+    color: #FF783D;
+    display: inline-block;
+    text-decoration: none;
+}
+.sign-up button{
+    display: inline-block;
+    margin-top: 75px;
+    margin-right: 30px;
+    padding: 10px 25px;
+    background: #FF783D;
+    border: none;
+    border-radius: 30px;
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+.toggle-password{
+    display: flex;
+    position: absolute;
+    top: 172px;
+    left: 330px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.toggle-password.active img.eye{
+    display: none;
+}
+.toggle-password.active img.eye-slash{
+    display: inline;
+}
+.toggle-password img.eye-slash{
+    display: none;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #ff783d;
+}
+.wrapper {
+    position: relative;
+    width: 1166px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: hacen;
+}
+.app-box {
+    width: 280.12px;
+    height: 100px;
+}
+.app-text {
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: hacen;
+}
+.footer-logo {
+    margin-left: 197px;
+    width: 247.51px;
+    height: 43.72px;
+}
+.social-box {
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 200px;
+    height: 69.61px;
+}
+.social-text {
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family: hacen;
+}
+.social-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#unr {
+    font-family: hacen !important;
+}
