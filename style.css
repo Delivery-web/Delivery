@@ -1,0 +1,368 @@
+@font-face {
+    src: url("assets/fonts/Intro\ Bold\ Regular.otf");
+    font-family: 'intro-bold';
+}
+@font-face {
+    src: url("assets/fonts/Lalezar-Regular.ttf");
+    font-family: 'lalezar';
+}
+@font-face {
+    src: url("assets/fonts/Hacen-Algeria.ttf");
+    font-family: 'hacen';
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    font-family: intro-bold;
+}
+.nav-wrapper {
+    width: 1066px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nav-logo {
+    width: 180px;
+    height: 31px;
+    margin-right: 26px;
+}
+.search-box {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    align-items: center;
+}
+.search-input {
+    width: 90%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    margin-right: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #a5a5a5;
+    font-family: intro-bold;
+    font-size: 15px;
+}
+.search-input::placeholder {
+    color: #a5a5a5;
+    letter-spacing: 1px;
+}
+.icon-search {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+.button-search {
+    margin-left: auto;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.nav-links {
+    text-decoration: none;
+    font-size: 17px;
+}
+.home {
+    color: #ff783d;
+    padding: 10px 26px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.home:hover {
+    transition: 0.5s;
+    background-color: #f3f3f3;
+}
+.en-lang {
+    margin-left: 15px;
+    color: #ff783d;
+    padding: 10px 12px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+}
+.ar-lang {
+    color: #ff783d;
+    padding: 10px 10px;
+    border-radius: 30px;
+    font-family: hacen !important;
+    margin-left: 5px;
+}
+.ar-lang:hover {
+    transition: 0.5s;
+    background-color: #f3f3f3;
+}
+
+.log-in {
+    color: #ff783d;
+    padding: 12px 12px;
+    border-radius: 30px;
+    margin-left: auto;
+}
+.log-in:hover {
+    transition: 0.5s;
+    background-color: #f3f3f3;
+}
+.sign-up {
+    color: white;
+    background-color: #ff783d;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+/*  header-img  */
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-header {
+    position: relative;
+    width: 1900px;
+    height: 500px;
+}
+.header-icon {
+    position: absolute;
+    width: 180px;
+    height: 198px;
+}
+
+/*  slider */
+.article {
+    display: flex;
+    height: 280px;
+    width: 1066px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    overflow: hidden;
+}
+.best-rev{
+    color: #ff783d;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: intro-bold !important;
+    letter-spacing: 4px;
+    margin-top: 70px;
+}
+.slider {
+    width: 1066px;
+    height: 210px;
+    border-radius: 10px;
+}
+.slides{
+    width: 220%;
+    height: 220px;
+    display: flex;
+    overflow: hidden;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 50%;
+    transition: 0.7s;
+    display: flex;
+}
+.nav-manual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.manual-btn{
+    border: #a5a5a5;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.manual-btn:hover {
+    background: #ff783d;
+}
+/* slider */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -50%;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 1066px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div {
+    background: #a5a5a5;
+    margin-top: 225px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background: #ff783d;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background: #ff783d;
+}
+
+
+.item-box {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 15px hsl(0, 0%, 50%,0.25);
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 5px;
+}
+.gap {
+    margin-right: 75px;
+}
+.gap2 {
+    margin-left: 20px;
+}
+
+/*  about us */
+.about-box {
+    width: 100%;
+    height: 532px;
+    background-color: #ff783d;
+    position: relative;
+    margin-top: 62px;
+    border-radius: 2px;
+}
+.about-us-title {
+    font-size: 40px;
+    font-family: intro-bold;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    letter-spacing: 4px;
+}
+
+/* mobile app  */
+.mobile-app-art {
+    height: 425px;
+    width: 100%;
+}
+.inner-mobile-app {
+    font-family: intro-bold;
+    color: #ff783d;
+    margin-top: 150px;
+    height: 215.39px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner-mobile-app h1 {
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.inner-mobile-app h4 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+.inner-mobile-app img {
+    width: 217px;
+    height: 65px;
+}
+#space {
+    margin-right: 36px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #ff783d;
+}
+.wrapper {
+    position: relative;
+    width: 1066px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: intro-bold;
+}
+.app-box {
+    width: 200px;
+    height: 100px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-text {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.devTech {
+    width: 127px;
+    height: 48px;
+}
+.footer-logo {
+    width: 247.51px;
+    height: 43.72px;
+}
+.social-box {
+    width: 193px;
+    height: 69.61px;
+    margin-left: auto;
+}
+.social-text {
+    letter-spacing: 1px;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.social-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
